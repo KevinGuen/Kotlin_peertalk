@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">study_01_fragment</string>
+    <string name="res_bottombt1">https://itforone.co.kr/~peertalk/theme/basic_app/img/app/ft_icon01.png</string>
+    <string name="res_bottombt2">https://itforone.co.kr/~peertalk/theme/basic_app/img/app/ft_icon02.png</string>
+    <string name="res_bottombt3">https://itforone.co.kr/~peertalk/theme/basic_app/img/app/ft_icon03.png</string>
+    <string name="res_bottombt4">https://itforone.co.kr/~peertalk/theme/basic_app/img/app/ft_icon04.png</string>
+    <string name="res_bottombt5">https://itforone.co.kr/~peertalk/theme/basic_app/img/app/ft_icon05.png</string>
+</resources>
