@@ -19,6 +19,8 @@ class Servercont :Fragment(){
 
         databind = DataBindingUtil.inflate(inflater, R.layout.fragment_servercont, container,false)
 
+
+
         return databind.root
 
     }

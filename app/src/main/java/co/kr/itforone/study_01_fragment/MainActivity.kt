@@ -3,17 +3,13 @@ package co.kr.itforone.study_01_fragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Switch
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import co.kr.itforone.study_01_fragment.databinding.ActivityMainBinding
-import co.kr.itforone.study_01_fragment.fragment.History
-import co.kr.itforone.study_01_fragment.fragment.Mycont
-import co.kr.itforone.study_01_fragment.fragment.Servercont
+import co.kr.itforone.study_01_fragment.fragment.*
 import com.bumptech.glide.Glide
+import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -21,8 +17,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var content_main : ViewPager2
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
 
             binding =
                 DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
@@ -32,16 +26,18 @@ class MainActivity : AppCompatActivity() {
                 set_imgview(i)
             }
 
-            val contentlist = listOf(History(),Mycont(), Servercont())
+            val contentlist = listOf(Servercont(), Group(),Mycont(), History(), Organization())
             val adapter = ViewAdapter(this)
             adapter.fragments = contentlist
             Log.d("frag_size", adapter.fragments.size.toString())
             binding.contentMain.adapter = adapter
 
 
+            val tabLayoutTextArray = arrayOf("주소록","그룹","개인연락처","통화내역","조직도")
 
-
-
+            TabLayoutMediator(binding.layoutTabmenu,binding.contentMain){tab,position->
+                tab.text = tabLayoutTextArray[position]
+            }.attach()
 
     }
 

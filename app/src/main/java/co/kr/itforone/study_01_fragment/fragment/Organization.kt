@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import co.kr.itforone.study_01_fragment.R
-import co.kr.itforone.study_01_fragment.databinding.FragmentMycontBinding
+import co.kr.itforone.study_01_fragment.databinding.FragmentOrganizationBinding
 
-class Mycont :Fragment(){
-    private lateinit var databind : FragmentMycontBinding
+class Organization :Fragment(){
+    private lateinit var databind : FragmentOrganizationBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -18,7 +18,7 @@ class Mycont :Fragment(){
     ): View? {
 
 
-        databind = DataBindingUtil.inflate(inflater, R.layout.fragment_mycont, container,false)
+        databind = DataBindingUtil.inflate(inflater, R.layout.fragment_organization, container,false)
 
 
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
     <data>
-
         <variable
             name="maindata"
             type="co.kr.itforone.study_01_fragment.MainActivity" />
@@ -22,22 +22,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.15"
+        android:layout_weight="0.13"
         android:orientation="vertical"
         android:weightSum="1"
         android:background="@drawable/head_back"
-        android:padding="10dp"
         >
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.1"
             />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.4"
+            android:layout_weight="0.5"
             android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -49,21 +51,24 @@
                 android:textColor="@color/white"
                 />
         </LinearLayout>
-        <TableLayout
+
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/layout_tabmenu"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_weight="0.38"
+            android:background="#00000000"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabRippleColor="@color/white"
+            app:tabPaddingEnd="5dp"
+            app:tabPaddingStart="5dp"
+            app:tabGravity="start"
+            android:layout_gravity="left"
+            android:layout_marginLeft="13dp"
+
             >
-
-
-        </TableLayout>
-<!--    <com.google.android.material.tabs.TabLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight="0.3"-->
-<!--        android:background="null"-->
-<!--        />-->
+        </com.google.android.material.tabs.TabLayout>
 
     </LinearLayout>
 
@@ -72,14 +77,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/white"
-        android:layout_weight="0.75"
+        android:layout_weight="0.8"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:layout_weight="0.1"
+        android:layout_weight="0.07"
         android:weightSum="1"
         android:background="@color/white"
         >
@@ -88,46 +93,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:padding="25dp"
+            android:padding="15dp"
             />
         <ImageView
             android:id="@+id/bottom_bt2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:padding="25dp"
+            android:padding="15dp"
             />
         <ImageView
             android:id="@+id/bottom_bt3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:padding="25dp"
+            android:padding="15dp"
             />
         <ImageView
             android:id="@+id/bottom_bt4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:padding="25dp"
+            android:padding="15dp"
             />
         <ImageView
             android:id="@+id/bottom_bt5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:padding="25dp"
+            android:padding="15dp"
             />
-
-
-
-
-
     </LinearLayout>
-
-
-
-
-
 </LinearLayout>
 </layout>
