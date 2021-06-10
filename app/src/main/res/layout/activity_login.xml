@@ -11,7 +11,6 @@
             type="co.kr.itforone.study_01_fragment.LoginActivity" />
     </data>
 
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -52,7 +51,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.085"
         android:hint="Username"
-        android:background="@drawable/edittxt_back"
+        android:background="@drawable/lolginedit_back"
         android:paddingLeft="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
@@ -69,7 +68,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.085"
         android:hint="Password"
-        android:background="@drawable/edittxt_back"
+        android:background="@drawable/lolginedit_back"
         android:paddingLeft="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
@@ -110,13 +109,6 @@
             android:layout_height="match_parent"
             android:layout_weight="0.15"/>
     </LinearLayout>
-
-
-
-
-
-
-
 
 </LinearLayout>
 </layout>

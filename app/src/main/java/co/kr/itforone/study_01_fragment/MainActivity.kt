@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
+import co.kr.itforone.study_01_fragment.Adapters.ViewAdapter
 import co.kr.itforone.study_01_fragment.databinding.ActivityMainBinding
 import co.kr.itforone.study_01_fragment.fragment.*
 import com.bumptech.glide.Glide

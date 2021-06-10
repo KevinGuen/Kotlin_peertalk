@@ -9,25 +9,15 @@
             type="co.kr.itforone.study_01_fragment.fragment.Mycont" />
     </data>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1"
-        android:orientation="vertical">
-        <EditText
-            android:id="@+id/mycon_schtxt"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1"
-            />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mycon_list"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.9"
+            android:layout_height="match_parent"
+
             />
 
 
 
-    </LinearLayout>
+
 </layout>

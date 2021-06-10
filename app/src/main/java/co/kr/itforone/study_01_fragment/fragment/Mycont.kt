@@ -22,6 +22,8 @@ class Mycont :Fragment(){
 
 
 
+
+
         return databind.root
     }
 }

@@ -1,4 +1,4 @@
-package co.kr.itforone.study_01_fragment
+package co.kr.itforone.study_01_fragment.Adapters
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
