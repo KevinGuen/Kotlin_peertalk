@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
                 tab.text = tabLayoutTextArray[position]
             }.attach()
 
+
+
     }
 
     fun set_imgview(number:Int){

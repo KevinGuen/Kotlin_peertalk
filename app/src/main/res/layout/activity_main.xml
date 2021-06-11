@@ -78,6 +78,8 @@
         android:layout_weight="0.08"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         >
         <EditText
             android:layout_marginLeft="10dp"
@@ -86,7 +88,10 @@
             android:layout_height="match_parent"
             android:background="@drawable/lolginedit_back"
             android:paddingLeft="20dp"
+            android:paddingRight="10dp"
             android:drawableLeft="@drawable/btn_search"
+            android:hint="이름, 연락처 검색"
+            android:singleLine="true"
             />
 
     </FrameLayout>
