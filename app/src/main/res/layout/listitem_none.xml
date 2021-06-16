@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+    <layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
+    <data>
+        <variable
+            name="noneitem"
+            type="co.kr.itforone.study_01_fragment.dataClases.NonelistItem" />
+    </data>
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -12,13 +20,12 @@
         android:backgroundTint="@color/white"
         >
 
-        <ImageView
+        <TextView
             android:id="@+id/noneitem_img"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
-            android:src="@drawable/btn_search"
-            android:padding="6dp"
+            android:text="test"
             />
 
         <TextView
@@ -28,14 +35,15 @@
             android:layout_weight="0.7"
             android:text="test"
             />
-        <ImageView
+
+        <TextView
+            android:id="@+id/noneitem_call"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="right"
             android:layout_weight="0.15"
-            android:src="@drawable/btn_search"
-            android:padding="6dp"
+            android:text="test"
             />
 
 
     </LinearLayout>
+</layout>
